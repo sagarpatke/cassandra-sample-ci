@@ -2,7 +2,7 @@
   "name": "cassandra-sample-ci",
   "version": "0.1.0",
   "scripts": {
-    "test": "npm run lint && node_modules/.bin/mocha **/*.spec.js",
+    "test": "npm run lint && DAO=mock node_modules/.bin/mocha **/*.spec.js",
     "start": "./start.js",
     "lint": "./node_modules/.bin/eslint '**/*.js'",
     "fixlint": "./node_modules/.bin/eslint '**/*.js' --fix"
