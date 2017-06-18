@@ -1,0 +1,26 @@
+{
+  "name": "cassandra-sample-ci",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "npm run lint && node_modules/.bin/mocha **/*.spec.js",
+    "start": "./start.js",
+    "lint": "./node_modules/.bin/eslint '**/*.js'",
+    "fixlint": "./node_modules/.bin/eslint '**/*.js' --fix"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "mocha": "^3.4.2",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "async": "^2.4.1",
+    "body-parser": "^1.17.2",
+    "chai": "^4.0.2",
+    "express": "^4.15.3",
+    "underscore": "^1.8.3",
+    "uuid": "^3.1.0",
+    "winston": "^2.3.1"
+  }
+}
