@@ -1,5 +1,7 @@
-const cartoonsDAO = require('./mock/cartoons');
+/* eslint global-require: "off" */
 
 module.exports = {
-  cartoonsDAO,
+  get cartoonsDAO() {
+    return require('./mock/cartoons');
+  },
 };
